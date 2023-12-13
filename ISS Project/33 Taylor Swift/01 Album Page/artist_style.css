@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:rgb(2, 2, 2);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #eeeeee;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+  font-size:20px;
+}
+.navbar a:hover {
+  color:rgb(2, 225, 255);
+  font-size: 22px;
+}
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/BOOTERZZ.ttf") ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KG";
+    src: url("Fonts/KGRedHands.ttf") ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KGout";
+    src: url("Fonts/KGRedHandsOutline.ttf") ;
+    font-weight: normal;
+    font-style: normal;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    
+    margin-bottom: -10vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.264), rgba(4, 9, 30, 0.218)), url(bg.jpg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    position: relative;
+  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 9em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal; 
+}
+
+.slowFade {
+    display: flex;
+    align-items: flex-start;
+    background: #626262;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.slowFade .slide img {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5) rotate(15deg);
+    -webkit-animation: slowFade 8s infinite;
+            animation: slowFade 8s infinite;
+}
+.slowFade .slide:nth-child(4) img {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.slowFade .slide:nth-child(3) img {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+}
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+}
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+}
+@keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+
+
+.content img {
+    border: #000;
+    border-radius: 20%;
+    object-fit:cover;
+    transition: transform 0.3s ease-in-out;
+   
+  }
+  
+  .content:hover img {
+    transform: scale(1.1);
+    box-shadow:
+    
+    0 0 75px #b4e8ff,
+    0 0 60px #8bcec2;
+  }
+
+  .artist-item{
+    display: flex;
+    
+  }
+
+  a .artist-name{
+    margin-top: -5%;
+    font-size: 8em;
+    font-family: "Booter - Zero Zero";
+    font-weight:lighter;
+    color: aqua;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 0.5px;
+     
+  }
+
+  a .artist-name1{
+    margin-top: -5%;
+    font-size: 3em;
+    font-family: "KG";
+    font-weight:lighter;
+    color: rgb(0, 255, 255);
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 0.5px;
+     
+  }
+
+  h2 .artist-name1{
+    margin-top: -5%;
+    font-size: 8em;
+    font-family: "KG";
+    font-weight:lighter;
+    color: aqua;
+    -webkit-text-stroke: #000;
+    -webkit-text-stroke-width: 0.5px;
+  }
+
+  .footer{
+    margin-top: 0;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

@@ -1,0 +1,183 @@
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: magenta;
+    color:black;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+#search-button:hover{
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #a30889;
+    color:black;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#search-results {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result {
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.result:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.result img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.result h3 {
+    margin-top: 10px;
+    color: magenta;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.result h2{
+    text-align: center;
+    color: magenta;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.result p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+}
+.result button{
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: aqua;
+    color:black;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.navbar {
+    overflow: hidden;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #eeeeee;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size:20px;
+}
+/* 
+.navbar a:hover {
+    color:rgb(2, 225, 255);
+    font-size: 22px;
+} */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.footer{
+    margin-top: 800px;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+  
+  /* Style for form labels */
+  label {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+    margin-right: 10px;
+  }
+  
+  /* Style for checkboxes */
+  input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+  }
+  
+  /* Style for duration input */
+  #duration {
+    width: 50px;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+  }
+  
+  /* Style for explicit filter checkbox */
+  #explicit {
+    margin-right: 10px;
+  }
+  
+  /* Style for reset button */
+  input[type="reset"] {
+    background-color: magenta;
+    border: none;
+    color:black;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Hover effect for reset button */
+  input[type="reset"]:hover {
+    background-color: #a30889;
+  }
+  

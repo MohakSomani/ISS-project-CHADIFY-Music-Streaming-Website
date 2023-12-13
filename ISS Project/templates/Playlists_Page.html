@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlists Page</title>
+    <link href="../static/Playlists.css" rel="stylesheet">
+</head>
+<body bgcolor="black">
+    <nav class="navbar">
+        <a href="/ISS PROJECT/00 Home Page/homepage.html">
+                <img src="/ISS PROJECT/gigachad.jpg" width="280" height="75">
+        </a>
+        <a href="/ISS PROJECT/01 About Page/aboutpage.html" style="float: right;">
+          <br>
+            <b>About Us</b>
+        </a>
+        <a href="/ISS PROJECT/02 Artists Page/artist.html" style="float: right;">
+          <br>
+            <b>
+                Artists You May Like
+            </b>
+        </a>
+        <a href="/ISS PROJECT/search.html" style="float: right;">
+            <br>
+            <b>Search new music!</b>
+        </a>
+        <a href="/ISS PROJECT/03 Spotlight Page/spotlight.html" style="float: right;">
+            <br>
+            <b>Today's Spotlight</b>
+        </a>
+        <a href="http://127.0.0.1:5000" style="float: right;">
+          <br>
+          <b>Your Playlists</b>
+        </a>
+    </nav>
+    <div class="main-font">
+        <b>Your Favourite Songs!</b>
+    </div>
+    <div class="grid-table">
+        <div class="not-main-font-1"><strong>Song</strong></div>
+        <div class="not-main-font-1"><strong>Duration</strong></div>
+        <div class="not-main-font-1">Album</div>
+        <div class="not-main-font-1">Artist</div>
+    </div>
+    <hr width="100%" color="darkcyan" />
+    {% for song in songs %}
+    <div class="grid-table">
+      <div class="not-main-font"><b>{{ song[1] }}</b></div>
+      <div class="not-main-font"><b>{{ song[2] }}</b></div>
+      <div class="not-main-font"><b>{{ song[3] }}</b></div>
+      <div class="not-main-font"><b>{{ song[4] }}</b></div>
+      <div>
+        <button class="removeButton" onclick="removeSong('{{ song[0] }}')">Remove</button>
+      </div>
+  </div>
+  <hr width="100%" color="darkcyan" />
+  {% endfor %}
+    <script src="../static/Playlist.js">
+    </script> 
+</body>
+</html>

@@ -1,0 +1,89 @@
+.navbar {
+    overflow: hidden;
+    background-color:rgb(2, 2, 2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #eeeeee;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size:20px;
+}
+/* .navbar a:hover {
+    color:rgb(2, 225, 255);
+    font-size: 22px;
+} */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.footer{
+    margin-top: 300px;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.spotifytxt{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+    font-size: 80px;
+}
+.containertxt{
+    margin-top: 80px;
+    padding: 30px;
+}
+.leftbox{
+    padding-top: 50px;
+    float: left;
+    width: 30%;
+    height: 500px;
+    padding-left: 200px;
+}
+.rightbox{
+    padding-top: 50px;
+    float: right;
+    width: 30%;
+    height: 500px;
+    padding-right: 200px;
+}
+.photo:hover {  
+  border:2px solid rgb(96, 238, 231);
+  box-shadow: 0 0 10px #333;  
+  -webkit-box-shadow: 0 0 10px #333;
+  -moz-box-shadow: 0 0 10px #333;
+  -o-box-shadow: 0 0 10px #333;
+  -ms-box-shadow: 0 0 10px #333;
+}
+.btn{
+    height: 64px;
+    font: normal normal 700 1em/4em Arial,sans-serif;
+    color: aqua;
+    overflow: hidden;
+    width: 200px;
+    background-color: magenta;
+    border-radius: 20px;
+}
+.btn a{
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    display:block;
+}
+.btn:hover{
+    background-color: pink;
+}
+.btn a:hover{
+    text-decoration: none;
+}
+.first-link{
+    margin-top: 0em;   
+}
+.btn:hover .first-link{
+    margin-top: -4em;
+}
